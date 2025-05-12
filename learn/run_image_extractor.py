@@ -19,10 +19,10 @@ if __name__ == "__main__":
     )
     parser.add_argument("--bkg_image_path", default="data/original/bkg_images")
     parser.add_argument("--class_data_image_path", default="data/original/")
-    parser.add_argument("--run_bkg_extraction", action="store_true")
+    parser.add_argument("--disable_bkg_extraction", action="store_false")
     args = parser.parse_args()
     input_video_file = args.video_file
-    if args.run_bkg_extraction:
+    if not args.disable_bkg_extraction:
         output_bkg_image_path = args.bkg_image_path
 
         print("Extract background image for data augmentation")
