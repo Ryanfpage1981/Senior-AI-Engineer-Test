@@ -11,9 +11,9 @@ if __name__ == "__main__":
     
     parser = argparse.ArgumentParser()
     parser.add_argument("--cvat_file", default="data/cvat_annotations/labels_run_0_2000.xml")
-    parser.add_argument("--video_file", default="data/orignal/AICandidateTest-FINAL.mp4")
-    parser.add_argument("--bkg_image_path", default="data/orignal/bkg_images")
-    parser.add_argument("--class_data_image_path", default="data/orignal/")
+    parser.add_argument("--video_file", default="data/original/AICandidateTest-FINAL.mp4")
+    parser.add_argument("--bkg_image_path", default="data/original/bkg_images")
+    parser.add_argument("--class_data_image_path", default="data/original/")
     parser.add_argument("--run_bkg_extraction", action="store_true")
     args = parser.parse_args()
     input_video_file=args.video_file

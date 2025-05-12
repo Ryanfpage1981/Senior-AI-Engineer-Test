@@ -5,7 +5,7 @@ docker build -t lab-scene-understanding .
 
 # Check if a script was provided
 if [ "$#" -eq 0 ]; then
-  echo "Usage: ./run-docker.sh <all, extract, dataset_gen, train, analysis>"
+  echo "Usage: ./run-docker.sh <all, extract, dataset_gen, train, analysis, analysis_pretrained>"
   echo "   or: ./run-docker.sh shell    (to get an interactive shell)"
   exit 1
 fi

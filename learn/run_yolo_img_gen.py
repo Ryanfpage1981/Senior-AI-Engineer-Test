@@ -151,9 +151,9 @@ def split_dataset_by_n_labels(labels, n_labels, n_imgs, frac_t=0.9):
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("--bkg_image", default="data/orignal/bkg_images/lab_scene_bkg_0.png")
+    parser.add_argument("--bkg_image", default="data/original/bkg_images/lab_scene_bkg_0.png")
     parser.add_argument("--cvat_file", default="data/cvat_annotations/labels_run_0_2000.xml")
-    parser.add_argument("--class_data_image_path", default="data/orignal")
+    parser.add_argument("--class_data_image_path", default="data/original")
     parser.add_argument("--n_training_images", default=60) 
     parser.add_argument("--n_class_labels", default=130) ##This is going to create an unbalanced dataset - with hands 
     parser.add_argument("--yolo_data_dir", default="data/yolo")
