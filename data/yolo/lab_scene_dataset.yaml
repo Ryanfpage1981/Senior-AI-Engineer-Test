@@ -1,0 +1,4 @@
+train: /Senior-AI-Engineer-Test/data/yolo/train/images
+val: /Senior-AI-Engineer-Test/data/yolo/val/images
+nc: 3  # number of classes
+names: ['hand', 'bottle', 'petridish']  # class names
