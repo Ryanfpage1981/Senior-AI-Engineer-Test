@@ -68,7 +68,7 @@ if __name__ == '__main__':
     print("Run scene analysis")
     parser = argparse.ArgumentParser()
     parser.add_argument("--video_file", default='./data/orignal/AICandidateTest-FINAL.mp4')
-    parser.add_argument("--model_weights", default='./runs/detect/train7/weights/best.pt')
+    parser.add_argument("--model_weights", default='./runs/detect/train/weights/best.pt')
     parser.add_argument("--output_video_path", default='./results/tracking_overlay.mp4')
     parser.add_argument("--confidence_level", default=0.25)
     parser.add_argument("--display_in_real_time", default=False)
